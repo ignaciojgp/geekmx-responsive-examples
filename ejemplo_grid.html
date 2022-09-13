@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muestra a 24px</title>
+    <style>
+        html{
+            font-size: 12px;
+        }
+        .container {
+            width: 1024px;
+            margin: auto;
+            border: gray solid 1px;
+            box-sizing: border-box;
+            overflow: hidden;
+            padding: 0.5em;
+        }
+        .container .row {
+            display: block;
+            width: 100%;
+        }
+        [class*="col"] {
+            width: 100%;
+            margin: 0.5em;
+            padding: 1em;
+            background-color: rgb(228, 198, 198);
+            box-sizing: border-box;
+            float: left;
+        }
+        .container .row .col1 {
+            width: calc(100%/12 - 1em);
+        }
+        .container .row .col2 {
+            width: calc(100%/12 * 2 - 1em);
+        }
+        .container .row .col3 {
+            width: calc(100%/12 * 3 - 1em);
+        }
+        .container .row .col4 {
+            width: calc(100%/12 * 4 - 1em);
+        }
+        .container .row .col5 {
+            width: calc(100%/12 * 5 - 1em);
+        }
+        .container .row .col6 {
+            width: calc(100%/12 * 6 - 1em);
+        }
+        .container .row .col7 {
+            width: calc(100%/12 * 7 - 1em);
+        }
+        .container .row .col8 {
+            width: calc(100%/12 * 8 - 1em);
+        }
+        .container .row .col9 {
+            width: calc(100%/12 * 9 - 1em);
+        }
+        .container .row .col10 {
+            width: calc(100%/12 * 10 - 1em);
+        }
+        .container .row .col11 {
+            width: calc(100%/12 * 11 - 1em);
+        }
+        .container .row .col12 {
+            width: calc(100% - 1em);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col1">column1</div>
+            <div class="col1">column1</div>
+            <div class="col1">column1</div>
+            <div class="col1">column1</div>
+            <div class="col1">column1</div>
+            <div class="col1">column1</div>
+            <div class="col1">column1</div>
+            <div class="col1">column1</div>
+            <div class="col1">column1</div>
+            <div class="col1">column1</div>
+            <div class="col1">column1</div>
+            <div class="col1">column1</div>
+        </div>
+        <div class="row">
+            <div class="col1">column1</div>
+            <div class="col2">column2</div>
+            <div class="col3">column3</div>
+            <div class="col4">column4</div>
+            <div class="col5">column5</div>
+            <div class="col6">column6</div>
+            <div class="col7">column7</div>
+            <div class="col8">column8</div>
+            <div class="col9">column9</div>
+            <div class="col10">column10</div>
+            <div class="col11">column11</div>
+            <div class="col12">column12</div>
+        </div>
+    </div>
+    
+</body>
+</html>

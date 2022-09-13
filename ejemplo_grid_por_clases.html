@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo grid por clases</title>
+    <style>       
+        html {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container {
+            width: 100%;
+            margin: auto;
+            border: rgb(219, 219, 219) solid 1px;
+            box-sizing: border-box;
+            overflow: hidden;
+            padding: 0.5em;
+        }
+
+        .container .row {
+            display: block;
+            width: 100%;
+        }
+
+        [class*="col"] {
+            width: calc(100% - 1em) ;
+            margin: 0.5em;
+            padding: 1em;
+            background-color: rgb(255, 241, 241);
+            box-sizing: border-box;
+            float: left;
+        }
+
+        @media screen and (min-width: 768px) {
+
+
+            .container .row .col1 {
+                width: calc(100%/12 - 1em);
+            }
+
+            .container .row .col2 {
+                width: calc(100%/12 * 2 - 1em);
+            }
+
+            .container .row .col3 {
+                width: calc(100%/12 * 3 - 1em);
+            }
+
+            .container .row .col4 {
+                width: calc(100%/12 * 4 - 1em);
+            }
+
+            .container .row .col5 {
+                width: calc(100%/12 * 5 - 1em);
+            }
+
+            .container .row .col6 {
+                width: calc(100%/12 * 6 - 1em);
+            }
+
+            .container .row .col7 {
+                width: calc(100%/12 * 7 - 1em);
+            }
+
+            .container .row .col8 {
+                width: calc(100%/12 * 8 - 1em);
+            }
+
+            .container .row .col9 {
+                width: calc(100%/12 * 9 - 1em);
+            }
+
+            .container .row .col10 {
+                width: calc(100%/12 * 10 - 1em);
+            }
+
+            .container .row .col11 {
+                width: calc(100%/12 * 11 - 1em);
+            }
+
+            .container .row .col12 {
+                width: calc(100% - 1em);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col12">
+                <h1>Titulo del documento</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col3">
+                <h3>Menu</h3>
+                <ul>
+                    <li><a href="/">opcion 1</a></li>
+                    <li><a href="/">opcion 2</a></li>
+                    <li><a href="/">opcion 3</a></li>
+                    <li><a href="/">option 4</a></li>
+                </ul>
+            </div>
+            <div class="col6">
+                <img class="row" src="http://via.placeholder.com/500x200" alt="ejemplo">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi convallis molestie nisi, ut iaculis
+                    odio luctus in. Nullam eu tempor metus. Sed erat lacus, maximus sed mauris vitae, commodo fermentum
+                    orci. Pellentesque eu dignissim velit. Fusce mattis felis lacus, vitae egestas justo molestie
+                    rhoncus. Nam mattis at nunc in dignissim. Sed sodales metus at imperdiet laoreet. Ut consequat
+                    consequat tellus, at iaculis dolor aliquam eu. Proin ut metus eget urna placerat mollis vel in erat.
+                    Sed lacinia, purus id commodo tempus, magna magna fermentum enim, et imperdiet ligula sapien quis
+                    nibh. In consectetur, nibh at consectetur imperdiet, urna dolor dapibus urna, vel vulputate lorem ex
+                    id diam. Phasellus bibendum posuere leo, sed pulvinar risus volutpat sit amet.</p>
+                <p>Cras ligula felis, congue quis mi sed, fringilla egestas nulla. Nunc in odio felis. Maecenas nibh
+                    velit, congue in est ut, aliquet sagittis velit. Aenean et nunc erat. Nam bibendum, ex in porta
+                    tincidunt, mauris purus facilisis felis, finibus consequat massa lorem eget ipsum. Nunc et malesuada
+                    felis, eu rutrum ante. Donec ultrices auctor odio, at gravida ex accumsan et. In semper vitae orci
+                    sed aliquam. Donec semper felis id gravida rhoncus. Ut volutpat nibh et turpis dignissim, quis
+                    scelerisque enim aliquet. Duis nec ligula fermentum, tempor lorem et, consequat enim. Suspendisse
+                    sodales eros dui, id ullamcorper eros suscipit in. Vestibulum ante ipsum primis in faucibus orci
+                    luctus et ultrices posuere cubilia curae; Pellentesque commodo nulla non libero tempor, id efficitur
+                    neque auctor. Suspendisse eu bibendum orci. Praesent vel luctus metus.</p>
+                <p>Sed a ipsum venenatis, efficitur elit et, egestas urna. Morbi vel ultricies est. Morbi eget elementum
+                    mi. Suspendisse lobortis mi tristique magna dapibus, nec lobortis ligula aliquet. Sed porta risus
+                    elit. Morbi ut lacinia elit. Nulla maximus dui ut egestas fermentum. Fusce vitae libero tellus. Cras
+                    fermentum lacus eget ante fermentum, vitae porta massa placerat. Duis pellentesque semper leo, id
+                    viverra nisi fermentum nec. Ut enim arcu, efficitur eu pellentesque in, fermentum a nisl.
+                    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec
+                    mollis neque eget massa faucibus, sed maximus ante suscipit. Integer commodo ut magna ac egestas.
+                    Maecenas elementum sem sem, ut ultricies diam vestibulum vel.</p>
+                <p>Suspendisse id sem sem. Vestibulum arcu mauris, facilisis at mi eu, efficitur tempor augue. Integer
+                    egestas condimentum sagittis. Aenean semper aliquam sagittis. Curabitur ex purus, molestie eget
+                    facilisis sed, ullamcorper vitae nisl. In convallis pulvinar sollicitudin. Fusce et vehicula ipsum,
+                    at feugiat libero.</p>
+                <p>Aliquam erat volutpat. Vivamus faucibus viverra velit. Integer nec lacus eros. Nam rutrum posuere
+                    velit ut mollis. Integer ac ultricies diam. Vivamus pellentesque eu risus vel finibus. Morbi nec
+                    commodo est, tincidunt mattis urna. Aliquam aliquam ligula sit amet justo venenatis, et egestas
+                    velit consequat. Nunc nec nulla non neque suscipit auctor. Proin imperdiet auctor tellus, et
+                    tincidunt ante faucibus ut. Sed lectus tellus, sollicitudin ac lacus eu, vulputate facilisis ipsum.
+                    Ut aliquet sagittis arcu in volutpat. Aenean lobortis lacus eu diam mollis, a facilisis nibh tempus.
+                </p>
+            </div>
+            <div class="col3">
+                <p>Aliquam erat volutpat. Vivamus faucibus viverra velit. Integer nec lacus eros. Nam rutrum posuere
+                    velit ut mollis. Integer ac ultricies diam. Vivamus pellentesque eu risus vel finibus. Morbi nec
+                    commodo est, tincidunt mattis urna. Aliquam aliquam ligula sit amet justo venenatis, et egestas
+                    velit consequat. Nunc nec nulla non neque suscipit auctor. Proin imperdiet auctor tellus, et
+                    tincidunt ante faucibus ut. Sed lectus tellus, sollicitudin ac lacus eu, vulputate facilisis ipsum.
+                    Ut aliquet sagittis arcu in volutpat. Aenean lobortis lacus eu diam mollis, a facilisis nibh tempus.
+                </p>
+                <img class="row" src="http://via.placeholder.com/200x200" alt="ejemplo">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
